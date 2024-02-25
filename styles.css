@@ -22,7 +22,7 @@ a {
 }
 
 a:hover {
-  color: orange;
+  color: #FECC02;
 }
 
 /* HEADER */
@@ -43,6 +43,11 @@ header {
     font-size: 1.5rem;
     font-weight: bold;
     font-family: korolev;
+    color: #006AA7;
+}
+.navbar .logo a span{
+    color: #FECC02;
+    font-family: korolev;
 }
 .navbar .links{
     display: flex;
@@ -55,8 +60,8 @@ header {
     display: none;
 }
 .action_btn{
-    background-color: orange;
-    color: #fff;
+    background-color: #FECC02;
+    color: #006AA7;
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
