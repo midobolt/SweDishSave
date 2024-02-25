@@ -107,6 +107,43 @@ header {
     display: flex;
     justify-content: center;
 }
+/* Reset default styles */
+select {
+  color: #006AA7;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  background-color: transparent;
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Custom dropdown arrow */
+select::-ms-expand {
+  display: none;
+}
+
+/* Styling the dropdown container */
+select {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-right: 1.5rem; /* Adjust spacing for the dropdown arrow */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23000" d="M7 10l5 5 5-5z"/></svg>'); /* Custom dropdown arrow icon */
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 1.2rem;
+  background-color: transparent;
+}
+
+/* Style when the dropdown is opened */
+select:focus {
+  border-color: #FECC02; /* Change border color when focused */
+}
+
+
 
 /* HERO*/
 section#hero{
