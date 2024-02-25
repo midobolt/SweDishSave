@@ -42,6 +42,7 @@ header {
 .navbar .logo a{
     font-size: 1.5rem;
     font-weight: bold;
+    font-family: korolev;
 }
 .navbar .links{
     display: flex;
