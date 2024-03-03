@@ -254,12 +254,45 @@ section#hero {
   .navbar .action_btn {
     display: none;
   }
-  select{
+  select {
     display: none;
   }
   .navbar .toggle_btn {
     display: block;
   }
+  .dropdown {
+    position: absolute;
+    top: -83px;
+    right: 5rem;
+    margin-top: 100px;
+    margin-right: 10px;
+    width: 130px;
+    height: 20px;
+  }
+  .dropdown::after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  width: 12px;
+  height: 2px;
+  background: #555;
+  z-index: 10;
+  transform: rotate(-40deg);
+  transition: 0.5s;
+}
+.dropdown::before {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  right: 28px;
+  width: 12px;
+  height: 2px;
+  background: #555;
+  z-index: 10;
+  transform: rotate(40deg);
+  transition: 0.5s;
+}
   .dropdown_menu {
     display: block;
   }
