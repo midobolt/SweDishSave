@@ -37,6 +37,9 @@ body {
       color: #fecc02; /* Change color on hover */
       transition: 0.3s ease-out;
     }
+.navbar-toggler{
+  background-color: rgba(36, 38, 43, 0.8);
+}
 .navbar-brand:hover {
       color: #044389; /* Show only the word "Dish" on hover */
       transition: 0.3s ease-out;
