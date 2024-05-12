@@ -36,7 +36,7 @@ body {
 .logo-dish:hover {
       color: #fecc02; /* Change color on hover */
       transition: 0.3s ease-out;
-    }
+}
 .navbar-toggler{
   background-color: rgba(36, 38, 43, 0.8);
 }
@@ -152,6 +152,10 @@ footer {
         display: flex;
         flex-direction: column;
       }
+.menu-section-col li a{
+  margin: 0;
+  padding: 0;
+}
 
 .menu-section-col li{
   /* background-color: green; */
@@ -243,4 +247,42 @@ footer {
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
   }
+}
+
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+div{
+  display: block;
+  unicode-bidi: isolate;
+}
+
+/* .btn-white {
+    background-color: #fff;
+    color: #777;
+} */
+
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
