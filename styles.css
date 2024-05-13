@@ -19,6 +19,20 @@ body {
 /* .navbar .container{
     background-color: #75A196;
 } */
+nav{
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: background-color, box-shadow 0.4s ease-in-out;
+}
+nav.scrolled{
+  background-color: rgba(250, 235, 215, 0.3);
+  box-shadow: 0 5px 10px #252d2d33;
+  position: fixed;
+  transition: background-color, box-shadow 0.4s ease-in-out;
+}
+
 .navbar-brand {
   color: #fecc02;
   font-weight: bold;
@@ -130,7 +144,7 @@ footer {
     text-align: center;
     position: relative;
     bottom: 0;
-    height: 90%;
+    height: 55%;
     width: 100%;
   }
   .menu-section-col{
