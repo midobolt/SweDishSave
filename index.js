@@ -3,11 +3,6 @@ function toggleLoginForm() {
   loginForm.classList.toggle("hidden");
 }
 
-// function showNavbar() {
-//    element = document.getElementById("navbar");
-//    element.innerHTML = "New Heading";
-// }
-
 document.addEventListener('scroll', () => {
   const navbar = document.querySelector('nav');
 
@@ -17,3 +12,39 @@ document.addEventListener('scroll', () => {
     navbar.classList.remove('scrolled');
   }
 })
+
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+ window.onclick = function (event) {
+   if (!event.target.matches(".dropbtn")) {
+     var dropdowns = document.getElementsByClassName("dropdown-content");
+     var i;
+     for (i = 0; i < dropdowns.length; i++) {
+       var openDropdown = dropdowns[i];
+       if (openDropdown.classList.contains("show")) {
+         openDropdown.classList.remove("show");
+       }
+     }
+   }
+ };
+
+// function myFunction() {
+//   document.getElementById("myDropdown").classList.toggle("show");
+// }
+
+// window.onclick = function (event) {
+//   if (!event.target.matches(".dropbtn")) {
+//     var dropdowns = document.getElementsByClassName("dropdown-content");
+//     var i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains("show")) {
+//         openDropdown.classList.remove("show");
+//       }
+//     }
+//   }
+// };
