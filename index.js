@@ -31,15 +31,7 @@ function myFunction() {
      }
    }
  };
- window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("header").style.fontSize = "30px";
-  } else {
-    document.getElementById("header").style.fontSize = "90px";
-  }
-}
 
 // window.onscroll = function () {
 //   scrollFunction();
@@ -53,18 +45,7 @@ function scrollFunction() {
 //   }
 // }
 
-window.onscroll = function () {
-  growShrinkLogo();
-};
 
-function growShrinkLogo() {
-  var Logo = document.getElementById("navbar");
-  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-    Logo.style.height = "200px";
-  } else {
-    Logo.style.height = "600px";
-  }
-}
 
 // function myFunction() {
 //   document.getElementById("myDropdown").classList.toggle("show");
