@@ -22,6 +22,22 @@ body {
 /* .navbar .container{
     background-color: #75A196;
 } */
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logo-area{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    /* position: absolute;
+    left: 50%;
+    top: 0;
+    content: "";
+    margin-left: -150px; */
+}
 nav{
   position: fixed;
   width: 100%;
