@@ -41,9 +41,21 @@ body {
 nav{
   position: fixed;
   width: 100%;
+  height: 600px;
   top: 0;
   transition: background-color, box-shadow 0.4s ease-in-out;
-
+}
+#navbar{
+  background-color: #044389;
+  padding: 50px 10px;
+  color: black;
+  text-align: center;
+  font-size: 90px; 
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.9s;
 }
 nav.scrolled{
   background-color: rgba(250, 235, 215, 0.3);
@@ -310,6 +322,15 @@ footer {
     margin-bottom: 30px;
   }
   .section button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .home-btn{
     background-color: #007bff;
     color: #fff;
     border: none;
