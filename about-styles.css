@@ -412,12 +412,12 @@ div {
             }
         }
 header {
-  background: #4caf50;
   color: #fff;
   padding: 1em 0;
   text-align: center;
 }
 .container {
+    padding-top: 300px;
   width: 80%;
   margin: auto;
   overflow: hidden;
