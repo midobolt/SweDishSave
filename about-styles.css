@@ -398,7 +398,17 @@ div {
     transform: translateY(0px);
   }
 }
-
+ @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 0 15px;
+            }
+            .menu-section-col {
+                width: 100%;
+                padding: 10px 0;
+                text-align: center;
+            }
+        }
 header {
   background: #4caf50;
   color: #fff;
