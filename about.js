@@ -21,6 +21,56 @@ function growShrinkLogo() {
   }
 }
 
+
+window.addEventListener("load", () => {
+  const logoImg = document.getElementById("logo-img");
+  const navbar = document.getElementById("navbar");
+    const logoImg = document.getElementById("logo-img");
+  logoImg.classList.add("spin");
+
+  document.getElementById("logo-img").style.height = "130px";
+  document.getElementById("logo-img").style.width = "130px";
+
+  setTimeout(() => {
+    logoImg.classList.remove("spin");
+  }, 2000); // Spin animation duration
+});
+
+$(window).on("scroll", function () {
+  var yPos = $(navbar).scrollTop(),
+    yPer = yPos / 120;
+
+  if (yPer > 1) {
+    yPer = 1;
+  }
+});
+
+var navbar = $("navbar"),
+  navbarHeight = navbar.height(),
+  logo = $(".logo"),
+  logoHeight = logo.height();
+
+  var logoPos = -1 * (yPer * 50) + 50,
+    logoSize = headerHeight * yPer - logoHeight * yPer + logoHeight,
+    headerPos = yPer * headerHeight - headerHeight;
+$(window).on("scroll", function () {
+  // Rest of our code
+});
+
+
+// window.onscroll = function () {
+//   const navbar = document.getElementById("navbar");
+//   const logoImg = document.getElementById("logo-img");
+
+//   if (window.pageYOffset > 0) {
+//     navbar.classList.add("scrolled");
+//     logoImg.classList.add("shrink");
+//   } else {
+//     navbar.classList.remove("scrolled");
+//     logoImg.classList.remove("shrink");
+//   }
+// };
+
 // function   shrinkGrowContent(){
 //   var Content = document.getElementById("container");
 //   if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5){

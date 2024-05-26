@@ -19,8 +19,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="Swedishsave.png">
     <title>Document</title>
   </head>
+  <div id="passwordContainer">
+    <h2>Enter Password</h2>
+    <input type="password" id="passwordInput" placeholder="Password">
+    <button onclick="checkPassword()">Submit</button>
+    <p id="errorMessage" style="color: red; display: none;">Incorrect password. Please try again.</p>
+  </div>
+  <div id="protectedContent" style="display: none;">
   <main>
   <body class="vh-100">
     <!-- Navbar -->
@@ -519,5 +527,7 @@
       </div>
     </footer>
   </body>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
   <script src="index.js"></script>
 </html>

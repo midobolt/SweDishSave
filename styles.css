@@ -473,3 +473,15 @@ div {
     transform: translateY(0px);
   }
 }
+
+#passwordContainer {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#protectedContent {
+  text-align: center;
+}

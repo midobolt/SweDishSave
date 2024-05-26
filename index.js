@@ -33,6 +33,31 @@ window.onclick = function (event) {
   }
 };
 
+
+
+function checkPassword() {
+  const password = document.getElementById('passwordInput').value;
+  const hashedPassword = CryptoJS.SHA256(password).toString();
+  const correctHashedPassword =
+    "a3501fd3bfea3af6db397d1ea19ffd4382a21e21fc5df31812a7903caeb0bda5"; // Replace with the SHA-256 hash of your password
+
+  if (hashedPassword === correctHashedPassword) {
+    document.getElementById('passwordContainer').style.display = 'none';
+    document.getElementById('protectedContent').style.display = 'block';
+  } else {
+    // document.getElementById('errorMessage').style.display = 'block';
+     window.location = "https://www.google.com";
+  }
+}
+
+// Utility to generate SHA-256 hash of a given password
+// function generateHash(password) {
+//   return CryptoJS.SHA256(password).toString();
+// }
+
+// Uncomment the line below and check the console to get the hash of your password
+// console.log(generateHash('bassword')); // Replace 'your_password' with your actual password
+
 // window.onscroll = function () {
 //   scrollFunction();
 // };
