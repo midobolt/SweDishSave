@@ -56,7 +56,7 @@ function checkPassword() {
 // }
 
 // Uncomment the line below and check the console to get the hash of your password
-// console.log(generateHash('bassword')); // Replace 'your_password' with your actual password
+// console.log(generateHash('')); // Replace 'your_password' with your actual password
 
 // window.onscroll = function () {
 //   scrollFunction();
