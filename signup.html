@@ -15,13 +15,14 @@
       crossorigin="anonymous"
     ></script>
     <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
 </head>
 <body>
     <!-- Section: Design Block -->
 <section class="text-center text-lg-start">
   <style>
     body{
-        background-color: #17594A;
+        background-color: #044389;
     }
     .cascading-right {
       margin-right: -50px;
@@ -33,7 +34,25 @@
       }
     }
   </style>
-
+  <nav
+      class="navbar sticky-top navbar-expand-lg navbar-dark"
+      id="navbar"
+      onscroll="showNavbar()"
+    >
+      <div class="logo-container">
+        <!-- Logo -->
+        <div class="logo-area">
+          <a href="index.html">
+            <img
+              src="Swedishsave-removebg-preview.png"
+              alt=""
+              class="logo-png"
+              id="logo-img"
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
   <!-- Jumbotron -->
   <div class="container py-4">
     <div class="row g-0 align-items-center">
@@ -49,13 +68,13 @@
               <div class="row">
                 <div class="col-md-6 mb-4">
                   <div data-mdb-input-init class="form-outline">
-                    <input type="text" id="form3Example1" class="form-control" />
+                    <input type="text" id="form3Example1" class="form-control" required/>
                     <label class="form-label" for="form3Example1">First name</label>
                   </div>
                 </div>
                 <div class="col-md-6 mb-4">
                   <div data-mdb-input-init class="form-outline">
-                    <input type="text" id="form3Example2" class="form-control" />
+                    <input type="text" id="form3Example2" class="form-control" required/>
                     <label class="form-label" for="form3Example2">Last name</label>
                   </div>
                 </div>
@@ -63,13 +82,13 @@
 
               <!-- Email input -->
               <div data-mdb-input-init class="form-outline mb-4">
-                <input type="email" id="form3Example3" class="form-control" />
+                <input type="email" id="form3Example3" class="form-control" required/>
                 <label class="form-label" for="form3Example3">Email address</label>
               </div>
 
               <!-- Password input -->
               <div data-mdb-input-init class="form-outline mb-4">
-                <input type="password" id="form3Example4" class="form-control" />
+                <input type="password" id="form3Example4" class="form-control" required/>
                 <label class="form-label" for="form3Example4">Password</label>
               </div>
 
@@ -120,4 +139,5 @@
 </section>
 <!-- Section: Design Block -->
 </body>
+<!-- <script src="about.js"></script> -->
 </html>

@@ -62,8 +62,9 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 100%;
-  transition: 0.9s;
+  height: 100vh;
+  transition: 0.5s;
+  z-index: 1000;
 }
 nav.scrolled {
   background-color: rgba(250, 235, 215, 0.3);
@@ -400,27 +401,47 @@ div {
     transform: translateY(0px);
   }
 }
- @media (max-width: 768px) {
-            .container {
-                width: 100%;
-                padding: 0 15px;
-            }
-            .menu-section-col {
-                width: 100%;
-                padding: 10px 0;
-                text-align: center;
-            }
-        }
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .menu-section-col {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+}
 header {
   color: #fff;
   padding: 1em 0;
   text-align: center;
 }
 .container {
-    padding-top: 300px;
+  padding-top: 300px;
   width: 80%;
   margin: auto;
   overflow: hidden;
+
+  margin-top: 100vh; /* Same as initial navbar height */
+  padding: 20px;
+  /* height: calc(100vh - 50px); */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* background-color: #f1c40f; */
+  transition: height 0.5s, margin-top 0.5s;
+
+  /* display: flex;
+    flex-flow: wrap;
+    gap: 2rem 1rem;
+    width: 100%;
+    box-sizing: border-box; */
+}
+.container.my-5.inBOJC{
+  display: grid;
+  grid-template-rows: repeat(4, 100px);
+  grid-template-columns: repeat(auto-fit, minmax (100px, 1fr));
 }
 h1,
 h2 {
